@@ -1,0 +1,18 @@
+<html lang="en">
+<h1> Инвентарь </h1>
+<ul>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ equipment_list }}</title>
+</head>
+    {% if equipment_list %}
+        <ul>
+            {% for equipment in equipment_list %}
+                <li><a> {{ equipment.name_equipment }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+    <p> No equipment yet </p>
+    {% endif %}
+</ul>
+</html>

@@ -1,0 +1,10 @@
+{% if latest_exercise_list %}
+    <ul>
+        {% for exercise in latest_exercise_list %}
+            <li><a href='{% url "exercised:detail" exercise.id %}'>
+                {{ exercise.name_of_exercise }}</a> </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> No exercise yet </p>
+{% endif %}
