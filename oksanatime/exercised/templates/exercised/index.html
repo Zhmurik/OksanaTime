@@ -1,3 +1,4 @@
+<h1> Упражнения </h1>
 {% if latest_exercise_list %}
     <ul>
         {% for exercise in latest_exercise_list %}
@@ -8,3 +9,6 @@
 {% else %}
     <p> No exercise yet </p>
 {% endif %}
+<p></p>
+<h1> <a href='{% url "exercised:equipment" %}'> Инвентарь </a></h1>
+
